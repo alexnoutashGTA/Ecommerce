@@ -66,7 +66,7 @@
 
 
 /* Small devices such as cellphones */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 450px) {
     .avatar-container {
         margin-right: auto;
         margin-left: auto;
@@ -90,12 +90,16 @@
 
 }
 
-/* Medium devices such as tablets (641px and 1281) */
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
+/* Medium devices such as tablets (451px and 1281) */
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+
+}
+/* large mobile devices such as bugger tablets (1025px and 1280) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
 }
 
-/* Large devices such as full screens (1281 and up) */
+/* Large devices such as full screens desktops (1281 and up) */
 @media only screen and (min-width: 1281px) {
 
 }
