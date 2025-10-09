@@ -87,6 +87,11 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
+    .buttons_row{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
 
 }
 
