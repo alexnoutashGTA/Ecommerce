@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './button_theme.css'; // Import your CSS file
-import './App.css';
+import './app-backup.css';
 
 function App() {
     const totalImagesLinks = [
@@ -136,8 +136,33 @@ function App() {
     }
 
     return (
-        <div className="home_page_main_area">
-
+        <div className="App">
+            <header className="App-header">
+                <div className="primeAssetArea">
+                    <h1> MyBook – The Smarter Way for College Students to Connect, Share, and Thrive</h1>
+                </div>
+                <article className="home_page_main_area">
+                    <section id="avatarSection">
+                        <div className="avatar-container">
+                            {imagesLinks.map((image: any, index: number) => (
+                                <div className="avatar" key={index} >
+                                    <img src={image.url} alt={image.desc}></img>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                    <div className="buttons_row">
+                        <button style={{
+                            'opacity': isFirstPage ? '0.6' : '1.0',
+                            'cursor': isFirstPage ? 'not-allowed' : 'allowed',
+                        }} onClick={previousClicked} >Previous</button>
+                        <button style={{
+                            'opacity': isLastPage? '0.6' : '1.0',
+                            'cursor': isLastPage ? 'not-allowed' : 'allowed',
+                        }} className="previousButtonStyle" onClick={nextClicked} >Next</button>
+                    </div>
+                </article>
+            </header>
         </div>
     );
 }
