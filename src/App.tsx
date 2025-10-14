@@ -137,7 +137,8 @@ function App() {
 
     return (
         <div className="home_page_main_area">
-
+            <div id="side_menu"></div>
+            <div id="bread_crumb_menu"></div>
         </div>
     );
 }
