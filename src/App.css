@@ -20,3 +20,29 @@
     width: 100%;
     background-color: #3c3a3a !important;
 }
+
+@media only screen and (max-width: 450px) {
+    #side_menu{
+        display: none;
+    }
+}
+
+/* Medium devices such as tablets (451px and 1281) */
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    #side_menu{
+        display: none;
+    }
+}
+/* large mobile devices such as bugger tablets (1025px and 1280) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    #bread_crumb_menu{
+        display: none;
+    }
+}
+
+/* Large devices such as full screens desktops (1281 and up) */
+@media only screen and (min-width: 1281px) {
+    #bread_crumb_menu{
+        display: none;
+    }
+}
