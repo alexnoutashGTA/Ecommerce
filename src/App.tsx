@@ -139,7 +139,12 @@ function App() {
         <div className="home_page_main_area">
             <div id="bread_crumb_menu"></div>
             <div id="two_boxes_horizontal">
-                <div id="side_menu"></div>
+                <div id="side_menu">
+                    {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Account</a>
+                </div>
                 <div id="content_area">
                     <div id="button_area">
                         <div id ="previous_button_area">

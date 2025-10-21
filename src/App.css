@@ -16,13 +16,14 @@
 button{
     display: block;
 }
+
 #side_menu{
     position: relative;
     top: 20px;
     left: 10px;
     height: 100%;
     width: 200px;
-    background-color: #3c3a3a;
+    background-color: #3c3232;
 }
 #bread_crumb_menu{
     position: relative;
@@ -32,6 +33,11 @@ button{
     height: 200px;
     width: 100%;
     background-color: #3c3a3a !important;
+}
+a{
+    display: block;
+    color: white;
+    font-size: x-large;
 }
 
 #content_area{
