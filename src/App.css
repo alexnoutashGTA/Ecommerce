@@ -9,7 +9,13 @@
     height: 100%;
     width: 100%;
 }
-
+#button_area{
+    border: #151515 1px solid;
+    margin-top: 95vh;
+}
+button{
+    display: block;
+}
 #side_menu{
     position: relative;
     top: 20px;

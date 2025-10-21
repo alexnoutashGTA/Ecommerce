@@ -140,7 +140,16 @@ function App() {
             <div id="bread_crumb_menu"></div>
             <div id="two_boxes_horizontal">
                 <div id="side_menu"></div>
-                <div id="content_area"></div>
+                <div id="content_area">
+                    <div id="button_area">
+                        <div id ="previous_button_area">
+                             <button id="button_area_prev" >Previous</button>
+                        </div>
+                        <div id="next_button_area">
+                            <button id="button_area_next" >Next</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
