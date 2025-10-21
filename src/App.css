@@ -76,3 +76,11 @@ a{
         display: none;
     }
 }
+#previous_button_area{
+  display:inline-block;
+
+}
+
+#next_button_area{
+  display:inline-block;
+}
