@@ -1,6 +1,6 @@
 .home_page_main_area{
     position: relative;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
 }
 #two_boxes_horizontal{
@@ -11,7 +11,8 @@
 }
 #button_area{
     border: #151515 1px solid;
-    margin-top: 95vh;
+    position: sticky;
+    top: 90vh;
 }
 button{
     display: block;
@@ -26,7 +27,7 @@ button{
     background-color: #3c3232;
 }
 #bread_crumb_menu{
-    position: relative;
+    position: sticky !important;
     top: 20px;
     left: 10px;
     right: 10px;
@@ -41,7 +42,7 @@ a{
 }
 
 #content_area{
-    position: relative;
+    position: static;
     background-color: bisque;
     height: 100%;
     width: 100%;
