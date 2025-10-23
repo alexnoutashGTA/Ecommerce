@@ -74,16 +74,18 @@ a {
 
 a::after {
     content: "";
-    position: absolute; inset: auto 0 -2px 0;
+    position: absolute; inset: 20px 0;
     height: 2px; border-radius: 2px;
     background: currentColor;
     box-shadow: var(--glow);
-    transform: scaleX(.3);
-    transform-origin: center;
-    transition: transform .25s ease;
+    transform: scaleX(.6);
+    transform-origin: left;
+    transition: transform .3s ease;
 }
 a:hover::after,
-a:focus-visible::after { transform: scaleX(1); }
+a:focus-visible::after {
+    transform-origin: left;
+    transform: scaleX(.2); }
 
 /* ===== 5) Animated brackets that slide in ===== */
 .link-bracket {

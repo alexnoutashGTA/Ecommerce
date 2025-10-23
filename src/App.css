@@ -38,8 +38,7 @@ button{
 }
 a{
     display: block;
-    color: white;
-    font-size: x-large;
+    margin: 20px;
 }
 
 #content_area{
