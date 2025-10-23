@@ -1,0 +1,112 @@
+/* ===== Base reset for all anchors ===== */
+a {
+    --link: #4f46e5;            /* primary */
+    --link-2: #53767c;          /* accent  */
+    --ink: #0f172a;             /* text color */
+    color: var(--link);
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Keyboard focus — highly visible */
+a:focus-visible {
+    box-shadow: 0 0 0 .2rem rgba(79,70,229,.35);
+    border-radius: .4rem;
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+}
+
+/* ===== 1) Underline that slides in ===== */
+.link-underline {
+    color: var(--ink);
+    background:
+            linear-gradient(currentColor, currentColor) left bottom / 0 2px no-repeat;
+    transition: background-size .35s ease;
+    padding-bottom: 2px;
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+    background-size: 100% 2px;
+}
+
+/* ===== 2) Smooth gradient text with subtle lift ===== */
+.link-gradient {
+    --g1: #a78bfa; /* violet */
+    --g2: #22d3ee; /* cyan   */
+    --g3: #34d399; /* green  */
+    background: linear-gradient(90deg, var(--g1), var(--g2), var(--g3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: transform .2s ease, filter .2s ease;
+}
+.link-gradient:hover,
+.link-gradient:focus-visible {
+    transform: translateY(-1px);
+    filter: drop-shadow(0 2px 6px rgba(34,211,238,.35));
+}
+
+/* ===== 3) Soft pill with fill-on-hover ===== */
+.link-pill {
+    color: var(--link);
+    padding: .35rem .7rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    transition: background-color .25s ease, color .25s ease, transform .15s ease;
+}
+.link-pill:hover,
+.link-pill:focus-visible {
+    background: color-mix(in oklab, var(--link) 12%, white);
+    transform: translateY(-1px);
+}
+.link-pill:active { transform: translateY(0); }
+
+/* ===== 4) Neon glow underline ===== */
+a {
+    --glow: 0 0 8px rgba(3, 137, 161, 0.75), 0 0 18px rgba(47, 98, 108, 0.5);
+    color: var(--link-2);
+}
+
+a::after {
+    content: "";
+    position: absolute; inset: auto 0 -2px 0;
+    height: 2px; border-radius: 2px;
+    background: currentColor;
+    box-shadow: var(--glow);
+    transform: scaleX(.3);
+    transform-origin: center;
+    transition: transform .25s ease;
+}
+a:hover::after,
+a:focus-visible::after { transform: scaleX(1); }
+
+/* ===== 5) Animated brackets that slide in ===== */
+.link-bracket {
+    padding: 0 .35rem;
+    color: var(--ink);
+}
+.link-bracket::before,
+.link-bracket::after {
+    content: "«";
+    opacity: 0;
+    transform: translateX(-.4rem);
+    transition: transform .25s ease, opacity .25s ease;
+    color: var(--link);
+    position: relative;
+}
+.link-bracket::after {
+    content: "»";
+    transform: translateX(.4rem);
+}
+.link-bracket:hover::before,
+.link-bracket:focus-visible::before,
+.link-bracket:hover::after,
+.link-bracket:focus-visible::after {
+    opacity: 1;
+    transform: translateX(0);
+}
