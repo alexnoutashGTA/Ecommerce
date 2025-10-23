@@ -75,3 +75,38 @@ a{
         display: none;
     }
 }
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: fixed;
+    display: inline-block;
+    background-color: #61dafb;
+    left: 100px;
+    top: 100px;
+}
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: fixed;
+    display: inline-block;
+    left: 200px;
+    top: 200px;
+    background: coral;
+    transform: rotateY(45deg) translateZ(50px);
+    transform-style: preserve-3d;
+}
+
+#box3 {
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: fixed;
+    display: inline-block;
+    background-color: chartreuse;
+    left: 300px;
+    top: 300px;
+}

@@ -153,6 +153,17 @@ function App() {
                     <a href="">Account</a>
                 </div>
                 <div id="content_area">
+                    <div>
+                        <div id="box1">
+
+                        </div>
+                        <div id="box2">
+
+                        </div>
+                        <div id="box3">
+
+                        </div>
+                    </div>
                     <div id="button_area">
                         <div id ="previous_button_area">
                              <button id="button_area_prev" >Previous</button>
