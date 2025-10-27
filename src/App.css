@@ -111,8 +111,8 @@ a{
     top: 300px;
 }
 #previous_button_area{
-    display:inline-grid;
+    display:flex;
 }
 #next_button_area{
-    display:inline-grid;
+    display:flex;
 }
