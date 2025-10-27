@@ -165,11 +165,11 @@ function App() {
                         </div>
                     </div>
                     <div id="button_area">
-                        <div id ="previous_button_area">
-                             <button id="button_area_prev" >Previous</button>
+                        <div id="previous_button_area">
+                            <button id="button_area_prev">Previous</button>
                         </div>
                         <div id="next_button_area">
-                            <button id="button_area_next" >Next</button>
+                            <button id="button_area_next">Next</button>
                         </div>
                     </div>
                 </div>

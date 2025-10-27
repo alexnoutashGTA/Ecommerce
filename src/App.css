@@ -110,3 +110,9 @@ a{
     left: 300px;
     top: 300px;
 }
+#previous_button_area{
+    display:grid;
+}
+#next_button_area{
+    display:grid;
+}
