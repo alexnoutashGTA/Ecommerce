@@ -13,9 +13,21 @@
     border: #151515 1px solid;
     position: sticky;
     top: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
 }
 button{
-    display: block;
+    display: inline-block;
+    width: 100%;
+
+}
+#previous_button_area{
+    justify-self: start;
+}
+#next_button_area{
+    justify-self: end;
 }
 
 #side_menu{
@@ -89,6 +101,7 @@ a{
     top: 100px;
 }
 
+<<<<<<< HEAD
 #box2 {
     width: 200px;
     height: 200px;
@@ -111,4 +124,9 @@ a{
     background-color: chartreuse;
     left: 300px;
     top: 300px;
+=======
+#next_button_area{
+  display:inline-block;
+
+>>>>>>> 79a7819 (add css layout)
 }
